@@ -80,7 +80,7 @@ const dbFETCH = async () => {
 			} else {
 				console.log("Return End:", items)
 				const cronJob = await cron.schedule(
-					" * * * * * *",
+					" */5 * * * *",
 					async () => {
 						console.log("running a task every 5 Minutes")
 						for (let i = 0; i < items.length; i++) {
