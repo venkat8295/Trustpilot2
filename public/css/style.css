@@ -1,0 +1,38 @@
+#step1,
+#step2 {
+	padding: 10px;
+}
+
+label {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+input[type="text"],
+input[type="radio"] {
+	font-size: 12px !important;
+}
+
+input[type="checkbox"] {
+	margin: 0px 0 0;
+}
+
+button#next,
+button#save,
+button#addNewContract {
+	float: right;
+	margin-left: 10px;
+}
+
+.btn {
+	min-width: 0px !important;
+}
+
+.loading {
+	position: fixed;
+	margin: auto;
+	top: 10%;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
