@@ -4,7 +4,7 @@ const red = chalk.red.bold
 const green = chalk.green.bold
 const magenta = chalk.magenta.bold
 const connectDb = () => {
-	const URI = process.env.MONGOURI || MONGO
+	const URI = process.env.MONGOURI || process.env.MONGO
 	const options = {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,

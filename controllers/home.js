@@ -3,9 +3,6 @@ const axios = require("axios")
 const btoa = require("btoa")
 const alert = require("alert")
 const qs = require("querystring")
-const { resolve } = require("path")
-const { rejects } = require("assert")
-const { Promise } = require("mongoose")
 
 const Credentials = require("../models/Credentials")
 let credentials
@@ -73,7 +70,7 @@ const validateCredentials = (
 			)
 			console.log("trustpilotaccess:", trustpilotaccess)
 			if (trustpilotaccess == "TP Verified!!") {
-				const dbcredentials = await DBcredentials(
+				await DBcredentials(
 					freshDeskAPI,
 					freshDeskSubDomain,
 					trustPilotAPI,
