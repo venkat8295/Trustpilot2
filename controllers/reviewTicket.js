@@ -30,8 +30,7 @@ const fetchBusinessUnitId = (
 						"Res Review3:",
 						res.data.reviews[2].companyReply.text
 					)
-					// for (let i = 0; i < res.data.reviews.length; i++) {
-					for (let i = 0; i < 5; i++) {
+					for (let i = 0; i < res.data.reviews.length; i++) {
 						createFreshdeskTicket(
 							freshDesk_subDomain,
 							freshDesk_apiKey,
